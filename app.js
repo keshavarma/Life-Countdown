@@ -5,11 +5,13 @@ const form = document.querySelector("form");
 form.addEventListener("submit", submitForm);
 
 function submitForm(e) {
+  //Error Alerts
   if (birthdate.value == "") {
     alert("Please Enter Date of Birth");
   } else if (new Date(birthdate.value) > new Date()) {
     alert("The date you entered has not happened yet. Enter a valid date.");
   } else {
+    //Change the seconds continuosly
     setInterval(updateCountdown, 1000);
   }
 
