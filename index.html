@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Seconds you are living</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="enter-dob" id="enter-dob">
+        <form class="form" id="form" action="index.php">
+          <label for="date">Enter your Date of Birth: </label>
+          <input type="date" id="birthdate" />
+          <label for="time">Enter time of Birth: </label
+          ><span> Default (00:00)</span>
+          <input type="time" id="birthtime" />
+          <button href="#" class="test-button" id="submit">Submit</button>
+        </form>
+      </div>
+      <div class="seconds-counting" id="seconds-counting">
+        <h5>You have been living for</h5>
+        <h1 id="seconds">00</h1>
+        <small>seconds</small>
+      </div>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>
