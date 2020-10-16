@@ -6,7 +6,7 @@ form.addEventListener("submit", submitForm);
 
 function submitForm(e) {
   //Error Alerts
-  if (birthdate.value == "") {
+  if (birthdate.value === "") {
     //alert("Please Enter Date of Birth");
     showAlert("Please Enter Date of Birth");
   } else if (new Date(birthdate.value) > new Date()) {
